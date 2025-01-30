@@ -2,9 +2,10 @@ import pandas as pd
 import os
 from course_list import course_esports, course_liberal, course_all
 
-# ファイルパスとシート名
-file_path = r"/Users/bakusmba/Desktop/加藤研/dev/data/tiger_2024yobijikken_usefulfieldofviewtest(ja)_summary_2501140634.xlsx"
-sheet_name = "12月リベ"
+# ファイルパス
+file_path = r""
+# シート名
+sheet_name = ""
 
 # データの読み込み
 df = pd.read_excel(file_path, sheet_name=sheet_name)
