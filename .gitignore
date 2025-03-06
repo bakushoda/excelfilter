@@ -3,3 +3,5 @@ course_list.py
 data/
 
 result/
+
+.DS_Store
