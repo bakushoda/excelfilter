@@ -2,6 +2,10 @@ course_list.py
 
 data/
 
-result/
+filteredResult/
+
+ttestResult/
 
 .DS_Store
+
+myenv/

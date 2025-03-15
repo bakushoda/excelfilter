@@ -20,7 +20,7 @@ filtered_df['subjectId'] = pd.Categorical(filtered_df['subjectId'], categories=c
 sorted_df = filtered_df.sort_values('subjectId')
 
 # 出力先ディレクトリを作成（存在しない場合）
-output_dir = "result"
+output_dir = "filteredResult"
 os.makedirs(output_dir, exist_ok=True)
 
 # 元のファイル名から拡張子を取り除き、結果ファイル名を作成
