@@ -13,7 +13,7 @@ output_dir = "ttestResult"
 os.makedirs(output_dir, exist_ok=True)
 
 # Excelファイルの読み込み
-file_path = "data/マインドセット.xlsx"  # 適宜変更
+file_path = "data/主観的幸福感尺度.xlsx"  # 適宜変更
 input_filename = os.path.basename(file_path).replace(".xlsx", "")
 
 xls = pd.ExcelFile(file_path)
@@ -25,7 +25,7 @@ df_all_july = pd.read_excel(xls, sheet_name="全体7月")
 df_all_dec = pd.read_excel(xls, sheet_name="全体12月")
 
 # 対象のカラムリスト（必要な尺度を手動で追加）
-scale_types = ["GRIT合計スコア", "根気尺度", "一貫性尺度", "外向性", "協調性", "勤勉性", "神経症傾向", "開放性", "マインドセット合計スコア"]
+scale_types = ["GRIT合計スコア", "根気尺度", "一貫性尺度", "外向性", "協調性", "勤勉性", "神経症傾向", "開放性", "マインドセット合計スコア", "論理的思考への自覚", "探究心", "客観性", "証拠の重視", "批判的思考態度合計スコア", "WHO-5合計スコア", "満足感", "自信", "達成感", "人生に対する失望感", "至福感", "主観的幸福感尺度合計スコア"]
 
 # 有意差水準の定義
 def significance_label(p_value):
